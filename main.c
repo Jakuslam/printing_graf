@@ -1,20 +1,12 @@
-#include "graf.h"
+#include "graf.h" 
 
-
+//How to use Graf
 int main() {
-    //Priklad pouziti gkce printGraph
 
-    int data[20] = { 5,4,7,8,9,11,3,8,9,11,20,8,9,11,15 }; // list vstupnich hodnot 
-    int lenData = 15; //pocet vstupnich hodnot
+    int data[20] = { 5,4,7,8,9,11,3,8,9,11,20,8,9,11,15 }; // array of input data
+    int lenData = 15; //lenght of input data
 
-
-    printGraph(lenData, data); //tisk grafu s poctem radku, jako hodnot
-
-    //dodaatecny tisk legendy
-    printf("\n\n");
-    printf("01 - pocet DVD\n");
-    printf("02 - pocet CD\n");
-    printf("atd .. ");
+    printGraph(lenData, data); //calling a function that print graph
 
     return 0;
 }
