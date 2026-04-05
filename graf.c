@@ -1,16 +1,16 @@
 /******************************************************************************
-    Tisk gragu hodnot
+    Printing of graph
 
-        04.04.2026
-       Jakub Slama
+       05.04.2026
+      Jakub Slama
 
 *******************************************************************************/
 #include "graf.h"
 
 
-size_t printGraph(TYPE_OF_GRAF iLenData, TYPE_OF_GRAF iData[]) { //Tisk grafu hodnot + legendy
+size_t printGraph(TYPE_OF_GRAF iLenData, TYPE_OF_GRAF iData[]) { //Printing of graph
 
-    //najde maximální hodnotu v grafu
+    //Find max value in array 
     TYPE_OF_GRAF iRange = iData[0];
 
     for (TYPE_OF_GRAF i = 0; i < iLenData; i++) {
@@ -19,7 +19,7 @@ size_t printGraph(TYPE_OF_GRAF iLenData, TYPE_OF_GRAF iData[]) { //Tisk grafu ho
         }
     }
 
-    //vytiskne graf hodnot
+    //Print graph and values
     printf("\n\n");
     for (TYPE_OF_GRAF i = iRange; i > 0; i--) {
         printf(PRINT_OF_GRAF, i);
@@ -37,9 +37,7 @@ size_t printGraph(TYPE_OF_GRAF iLenData, TYPE_OF_GRAF iData[]) { //Tisk grafu ho
         printf("\n");
     }
 
-    //Tisk legendy
-
-    //Tisk čísel pod grafem 
+    //Print numbers under the graph
     printf("      ");
     for (TYPE_OF_GRAF y = 1; y <= iLenData; y++) {
 
